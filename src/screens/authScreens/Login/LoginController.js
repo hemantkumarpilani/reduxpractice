@@ -70,6 +70,14 @@ const LoginController = () => {
         }
 
         // successfulToast(toast);
+      } else {
+        toast.show(`Invalid status ${status}`, {
+          type: 'danger',
+          placement: 'top',
+          duration: 2000,
+          offset: 30,
+          animationType: 'zoom-in',
+        });
       }
     }
 
